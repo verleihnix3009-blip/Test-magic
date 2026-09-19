@@ -1,0 +1,41 @@
+{
+  "npcs": [
+    {
+      "id": "dorfvorsteher_otto",
+      "name": "Dorfvorsteher Otto",
+      "position": {
+        "x": 5,
+        "y": 5
+      },
+      "dialogue": {
+        "start": "Willkommen im Dorf, Abenteurer! Seit einigen Tagen sorgen Waldkobolde für Unruhe.",
+        "quest": "Wenn du uns helfen möchtest, besiege einen Waldkobold im nahen Wald. Kehre danach zu mir zurück.",
+        "complete": "Ausgezeichnet! Das Dorf ist dir dankbar. Nimm diese Belohnung und ruhe dich etwas aus."
+      }
+    },
+    {
+      "id": "haendlerin_maria",
+      "name": "Händlerin Maria",
+      "position": {
+        "x": 7,
+        "y": 5
+      },
+      "dialogue": {
+        "start": "Willkommen in meinem kleinen Laden. Vielleicht findest du etwas, das dir auf deiner Reise hilft.",
+        "shop": "Ich habe Heiltränke und andere nützliche Dinge für Abenteurer."
+      }
+    },
+    {
+      "id": "waldhueter_heinrich",
+      "name": "Waldhüter Heinrich",
+      "position": {
+        "x": 10,
+        "y": 8
+      },
+      "dialogue": {
+        "start": "Bleib im Wald aufmerksam. Die Kobolde werden immer mutiger.",
+        "warning": "Wenn du weitergehst, solltest du auf deine Lebenspunkte achten."
+      }
+    }
+  ]
+}
