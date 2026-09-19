@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test-magic</title>
+
+    <link rel="stylesheet" href="/web/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>Test-magic</h1>
+            <p>Dein eigenes Fantasy-Abenteuer</p>
+        </header>
+
+        <section id="auth" class="card">
+
+            <h2>Anmeldung</h2>
+
+            <div class="form">
+
+                <label>
+                    Benutzername
+                    <input
+                        id="username"
+                        type="text"
+                        autocomplete="username"
+                        maxlength="30"
+                    >
+                </label>
+
+                <label>
+                    Passwort
+                    <input
+                        id="password"
+                        type="password"
+                        autocomplete="current-password"
+                    >
+                </label>
+
+                <label>
+                    Charaktername
+                    <input
+                        id="characterName"
+                        type="text"
+                        maxlength="20"
+                    >
+                </label>
+
+                <div class="button-row">
+                    <button id="registerButton">
+                        Charakter erstellen
+                    </button>
+
+                    <button id="loginButton">
+                        Anmelden
+                    </button>
+                </div>
+
+            </div>
+
+            <p id="authMessage" class="message"></p>
+
+        </section>
+
+        <section id="game" class="game hidden">
+
+            <div class="card character-panel">
+
+                <div>
+                    <strong id="characterNameDisplay">
+                        -
+                    </strong>
+
+                    <span>
+                        Level
+                        <strong id="level">
+                            1
+                        </strong>
+                    </span>
+                </div>
+
+                <div class="stats">
+
+                    <span>
+                        Leben:
+                        <strong id="hp">
+                            -
+                        </strong>
+                    </span>
+
+                    <span>
+                        Erfahrung:
+                        <strong id="experience">
+                            -
+                        </strong>
+                    </span>
+
+                    <span>
+                        Gold:
+                        <strong id="gold">
+                            -
+                        </strong>
+                    </span>
+
+                </div>
+
+                <button id="logoutButton">
+                    Abmelden
+                </button>
+
+            </div>
+
+            <div class="game-grid">
+
+                <section class="card">
+
+                    <h2>Dorf</h2>
+
+                    <div id="world" class="world">
+
+                        <div class="player">
+                            🧙
+                        </div>
+
+                    </div>
+
+                    <div class="movement">
+
+                        <button data-direction="up">
+                            ▲
+                        </button>
+
+                        <div>
+                            <button data-direction="left">
+                                ◀
+                            </button>
+
+                            <button data-direction="down">
+                                ▼
+                            </button>
+
+                            <button data-direction="right">
+                                ▶
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <p id="position">
+                        Position: -
+                    </p>
+
+                </section>
+
+                <section class="card">
+
+                    <h2>NPCs</h2>
+
+                    <div class="npc">
+
+                        <h3>Dorfvorsteher Otto</h3>
+
+                        <p>
+                            Willkommen im Dorf, Abenteurer!
+                            Seit einigen Tagen sorgen Waldkobolde
+                            für Unruhe.
+                        </p>
+
+                        <button id="questButton">
+                            Quest annehmen
+                        </button>
+
+                    </div>
+
+                    <div class="npc">
+
+                        <h3>Händlerin Maria</h3>
+
+                        <p>
+                            Willkommen in meinem kleinen Laden.
+                            Vielleicht findest du etwas,
+                            das dir auf deiner Reise hilft.
+                        </p>
+
+                    </div>
+
+                    <div class="npc">
+
+                        <h3>Waldhüter Heinrich</h3>
+
+                        <p>
+                            Bleib im Wald aufmerksam.
+                            Die Kobolde werden immer mutiger.
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="card">
+
+                    <h2>Kampf</h2>
+
+                    <p>
+                        Ein Waldkobold wartet im nahen Wald.
+                    </p>
+
+                    <button id="battleButton">
+                        Waldkobold angreifen
+                    </button>
+
+                    <div
+                        id="battleLog"
+                        class="log"
+                    ></div>
+
+                </section>
+
+                <section class="card">
+
+                    <h2>Quest</h2>
+
+                    <div id="questPanel">
+                        Lade Quest-Daten ...
+                    </div>
+
+                </section>
+
+                <section class="card">
+
+                    <h2>Inventar</h2>
+
+                    <div id="inventory">
+                        Dein Inventar wird geladen ...
+                    </div>
+
+                </section>
+
+                <section class="card">
+
+                    <h2>Spielmeldung</h2>
+
+                    <p id="gameMessage">
+                        Willkommen!
+                    </p>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="/web/game.js"></script>
+
+</body>
+</html>
