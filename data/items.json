@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "heiltrank",
+      "name": "Heiltrank",
+      "type": "verbrauchbar",
+      "description": "Stellt 30 Lebenspunkte wieder her.",
+      "value": 10,
+      "heal": 30
+    },
+    {
+      "id": "kleines_schwert",
+      "name": "Kleines Schwert",
+      "type": "waffe",
+      "description": "Ein einfaches Schwert für angehende Abenteurer.",
+      "value": 25,
+      "attack": 5
+    },
+    {
+      "id": "lederruestung",
+      "name": "Lederrüstung",
+      "type": "ruestung",
+      "description": "Eine leichte Rüstung aus festem Leder.",
+      "value": 30,
+      "defense": 4
+    }
+  ]
+}
